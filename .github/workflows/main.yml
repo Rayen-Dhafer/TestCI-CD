@@ -12,3 +12,10 @@ jobs:
       steps:
         - name: Print a message 
           run: echo "Workflow Work"
+
+
+        - name: checkout repository
+          uses: actions/checkout@v5.0.0
+
+        - name: list repository files
+          run: ls -la
